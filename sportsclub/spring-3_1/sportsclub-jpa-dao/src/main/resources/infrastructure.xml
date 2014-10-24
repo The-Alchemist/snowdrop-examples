@@ -13,7 +13,7 @@
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd" default-lazy-init="true">
 
-    <jee:jndi-lookup id="entityManagerFactory" jndi-name="java:/jboss/sportsclub/emf" lookup-on-startup="false" 
+    <jee:jndi-lookup id="entityManagerFactory" jndi-name="java:jboss/sportsclub/emf" lookup-on-startup="false" 
                      expected-type="javax.persistence.EntityManagerFactory"/>
 
     <bean id="entityManager" class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
